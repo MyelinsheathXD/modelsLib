@@ -1,0 +1,150 @@
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\CEDFAC8A8BF787B2B44CE938D528AC01\TINYXML2-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/tmp/tinyxml2-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/src/tinyxml2-populate-stamp/Debug/tinyxml2-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\CEDFAC8A8BF787B2B44CE938D528AC01\TINYXML2-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/tmp/tinyxml2-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/src/tinyxml2-populate-stamp/Debug/tinyxml2-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\CEDFAC8A8BF787B2B44CE938D528AC01\TINYXML2-POPULATE-UPDATE.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\tinyxml2-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -P D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/tmp/tinyxml2-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\CEDFAC8A8BF787B2B44CE938D528AC01\TINYXML2-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/src/tinyxml2-populate-stamp/Debug/tinyxml2-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\CEDFAC8A8BF787B2B44CE938D528AC01\TINYXML2-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\tinyxml2-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/src/tinyxml2-populate-stamp/Debug/tinyxml2-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\CEDFAC8A8BF787B2B44CE938D528AC01\TINYXML2-POPULATE-BUILD.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\tinyxml2-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/src/tinyxml2-populate-stamp/Debug/tinyxml2-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\CEDFAC8A8BF787B2B44CE938D528AC01\TINYXML2-POPULATE-INSTALL.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\tinyxml2-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/src/tinyxml2-populate-stamp/Debug/tinyxml2-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\CEDFAC8A8BF787B2B44CE938D528AC01\TINYXML2-POPULATE-TEST.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\tinyxml2-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/src/tinyxml2-populate-stamp/Debug/tinyxml2-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\FEF7F169330A2E51931F5D906FE12097\TINYXML2-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/CMakeFiles/Debug/tinyxml2-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate-prefix/src/tinyxml2-populate-stamp/Debug/tinyxml2-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\85BD10987EB6F63E298D62DE4185BEF7\TINYXML2-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild -BD:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild --check-stamp-file D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

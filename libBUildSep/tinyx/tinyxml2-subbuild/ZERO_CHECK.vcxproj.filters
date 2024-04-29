@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\tinyxml2-subbuild\CMakeFiles\85bd10987eb6f63e298d62de4185bef7\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\tinyxml2-subbuild\tinyxml2-populate-prefix\tmp\tinyxml2-populate-mkdirs.cmake">
+      <Filter>Buildsystem Input Files\tinyxml2-populate-prefix\tmp</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{94039C79-C9F7-3AB8-B9BC-01F14C305806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\tinyxml2-populate-prefix\tmp">
+      <UniqueIdentifier>{2EB1E4F0-48DD-3863-BAF9-3D37803B0020}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

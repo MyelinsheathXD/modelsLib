@@ -1,0 +1,10 @@
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\TINYXML2-SUBBUILD\CMAKEFILES\85BD10987EB6F63E298D62DE4185BEF7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild -BD:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/tinyxml2-subbuild/tinyxml2-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
