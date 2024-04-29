@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\f144162debca7bc3510f422399a33410\qhull-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\f144162debca7bc3510f422399a33410\qhull-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\f144162debca7bc3510f422399a33410\qhull-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\f144162debca7bc3510f422399a33410\qhull-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\f144162debca7bc3510f422399a33410\qhull-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\f144162debca7bc3510f422399a33410\qhull-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\f144162debca7bc3510f422399a33410\qhull-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\f144162debca7bc3510f422399a33410\qhull-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\dd1c7fa7c01b9f6b5e7eca7ba1f82020\qhull-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\19a7c216b20eb212a6d92869cdba501b\qhull-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\qhull-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A9E24D32-9D44-3142-8C1E-0CEB7F49F36C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

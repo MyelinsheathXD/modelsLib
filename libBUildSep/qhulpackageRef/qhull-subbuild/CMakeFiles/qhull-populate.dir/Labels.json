@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/qhull-populate"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/19a7c216b20eb212a6d92869cdba501b/qhull-populate.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/dd1c7fa7c01b9f6b5e7eca7ba1f82020/qhull-populate-complete.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/f144162debca7bc3510f422399a33410/qhull-populate-build.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/f144162debca7bc3510f422399a33410/qhull-populate-configure.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/f144162debca7bc3510f422399a33410/qhull-populate-download.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/f144162debca7bc3510f422399a33410/qhull-populate-install.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/f144162debca7bc3510f422399a33410/qhull-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/f144162debca7bc3510f422399a33410/qhull-populate-patch.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/f144162debca7bc3510f422399a33410/qhull-populate-test.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/f144162debca7bc3510f422399a33410/qhull-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"qhull-populate"
+		],
+		"name" : "qhull-populate"
+	}
+}

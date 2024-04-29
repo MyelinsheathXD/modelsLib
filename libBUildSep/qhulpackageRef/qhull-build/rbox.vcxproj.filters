@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\rbox\rbox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B61983FB-4966-3295-8693-C88F07289B62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

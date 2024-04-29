@@ -1,0 +1,150 @@
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\F144162DEBCA7BC3510F422399A33410\QHULL-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/tmp/qhull-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/src/qhull-populate-stamp/Debug/qhull-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\F144162DEBCA7BC3510F422399A33410\QHULL-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/tmp/qhull-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/src/qhull-populate-stamp/Debug/qhull-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\F144162DEBCA7BC3510F422399A33410\QHULL-POPULATE-UPDATE.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -P D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/tmp/qhull-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\F144162DEBCA7BC3510F422399A33410\QHULL-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/src/qhull-populate-stamp/Debug/qhull-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\F144162DEBCA7BC3510F422399A33410\QHULL-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/src/qhull-populate-stamp/Debug/qhull-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\F144162DEBCA7BC3510F422399A33410\QHULL-POPULATE-BUILD.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/src/qhull-populate-stamp/Debug/qhull-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\F144162DEBCA7BC3510F422399A33410\QHULL-POPULATE-INSTALL.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/src/qhull-populate-stamp/Debug/qhull-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\F144162DEBCA7BC3510F422399A33410\QHULL-POPULATE-TEST.RULE
+setlocal
+cd D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/src/qhull-populate-stamp/Debug/qhull-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\DD1C7FA7C01B9F6B5E7ECA7BA1F82020\QHULL-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/Debug/qhull-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/qhull-populate-prefix/src/qhull-populate-stamp/Debug/qhull-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKEFILES\19A7C216B20EB212A6D92869CDBA501B\QHULL-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\QHULL-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild -BD:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild --check-stamp-file D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

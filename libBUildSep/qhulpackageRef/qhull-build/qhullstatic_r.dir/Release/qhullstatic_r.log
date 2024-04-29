@@ -1,0 +1,21 @@
+﻿  Building Custom Rule D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/qhull-src/CMakeLists.txt
+  global_r.c
+  stat_r.c
+  geom2_r.c
+  poly2_r.c
+  merge_r.c
+  libqhull_r.c
+  geom_r.c
+  poly_r.c
+  qset_r.c
+  mem_r.c
+  random_r.c
+  usermem_r.c
+  userprintf_r.c
+  io_r.c
+  user_r.c
+  accessors_r.c
+  rboxlib_r.c
+  userprintf_rbox_r.c
+  Generating Code...
+  qhullstatic_r.vcxproj -> D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\lib\Release\qhullstatic_r.lib
