@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/ccd-populate"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/754dbdc27afc927134188ffe663e9e19/ccd-populate.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/8ba6e0602a85dbb98adfab18cd508d60/ccd-populate-complete.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/9803062f43cbe4270f1861f3edee2442/ccd-populate-build.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/9803062f43cbe4270f1861f3edee2442/ccd-populate-configure.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/9803062f43cbe4270f1861f3edee2442/ccd-populate-download.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/9803062f43cbe4270f1861f3edee2442/ccd-populate-install.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/9803062f43cbe4270f1861f3edee2442/ccd-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/9803062f43cbe4270f1861f3edee2442/ccd-populate-patch.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/9803062f43cbe4270f1861f3edee2442/ccd-populate-test.rule"
+		},
+		{
+			"file" : "D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/9803062f43cbe4270f1861f3edee2442/ccd-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ccd-populate"
+		],
+		"name" : "ccd-populate"
+	}
+}

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\ccd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\mpr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\polytope.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\support.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\vec3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\ccd\ccd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\ccd\compiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\ccd\ccd_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\ccd\quat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\ccd\vec3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-build\src\ccd\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\alloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\dbg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\polytope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\simplex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\support.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-src\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B564D462-1166-3AD0-8FD4-10667C39AD8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B61983FB-4966-3295-8693-C88F07289B62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

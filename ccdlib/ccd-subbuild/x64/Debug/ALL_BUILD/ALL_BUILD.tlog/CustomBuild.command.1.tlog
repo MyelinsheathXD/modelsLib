@@ -1,0 +1,10 @@
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\CCD-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild -BD:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild --check-stamp-file D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^D:\ENGINESLIST\PX\MUJOCO\24\04\25\MJMOD\BVS\_DEPS\CCD-SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/engineslist/px/mujoco/24/04/25/mjmod/mjmodu -BD:/engineslist/px/mujoco/24/04/25/mjmod/Bvs --check-stamp-file D:/engineslist/px/mujoco/24/04/25/mjmod/Bvs/_deps/ccd-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
