@@ -41,7 +41,7 @@ distribution.
 #   include <cstring>
 #endif
 #include <stdint.h>
-
+#include <jni.h>
 
 #ifdef __cplusplus
 extern "C++" {
