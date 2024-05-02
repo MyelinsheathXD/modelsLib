@@ -24,6 +24,8 @@
 
 #include <ccd/quat.h>
 
+#include <jni.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */

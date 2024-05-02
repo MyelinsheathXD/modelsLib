@@ -21,6 +21,7 @@
 #include <ccd/compiler.h>
 #include <ccd/vec3.h>
 
+#include <jni.h>
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */

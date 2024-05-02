@@ -1,88 +1,76 @@
-if(DEFINED CCD_SINGLE OR DEFINED CCD_DOUBLE)
-  # make sure only DOUBLE or SINGLE is set; default to SINGLE
-  if(CCD_SINGLE)
-    set(CCD_DOUBLE OFF)
-  else()
-    set(CCD_SINGLE ON)
-  endif()
-  if(CCD_DOUBLE)
-    set(CCD_SINGLE OFF)
-  endif()
-elseif(ENABLE_DOUBLE_PRECISION)
-    set(CCD_DOUBLE ON)
-    set(CCD_SINGLE OFF)
-else()
-    set(CCD_DOUBLE OFF)
-    set(CCD_SINGLE ON)
-endif()
+cmake_minimum_required(VERSION 3.10)
 
-configure_file(ccd/config.h.cmake.in ccd/config.h)
+project(ccd)
 
-set(CCD_INCLUDES
-  ccd/ccd.h
-  ccd/compiler.h
-  ccd/ccd_export.h
-  ccd/quat.h
-  ccd/vec3.h
-  "${CMAKE_CURRENT_BINARY_DIR}/ccd/config.h")
+# Set the C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CCD_SOURCES
-  alloc.h
-  ccd.c
-  dbg.h
-  list.h
-  mpr.c
-  polytope.c
-  polytope.h
-  simplex.h
-  support.c
-  support.h
-  vec3.c)
+# Add the source files to the project
+# set(SOURCE_FILES
+# alloc.h
+# ccd.c
+# dbg.h
+# list.h
+# mpr.c
+# polytope.c
+# polytope.h
+# simplex.h
+# support.c
+# support.h
+# vec3.c
 
-add_library(ccd ${CCD_INCLUDES} ${CCD_SOURCES})
-set_target_properties(ccd PROPERTIES
-  PUBLIC_HEADER "${CCD_INCLUDES}"
-  SOVERSION ${CCD_SOVERSION}
-  VERSION ${CCD_VERSION})
-target_include_directories(ccd PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>)
+# )
 
-if(NOT WIN32)
-  find_library(LIBM_LIBRARY NAMES m)
-  if(NOT LIBM_LIBRARY)
-    message(FATAL_ERROR "Could NOT find required library LibM")
-  endif()
-  target_link_libraries(ccd "${LIBM_LIBRARY}")
-  if(BUILD_SHARED_LIBS)
-    set(CCD_PKGCONFIG_EXTRA_LIBS -lm PARENT_SCOPE)
-  endif()
-endif()
+# # Add the header files to the project
+# set(HEADER_FILES
+# ccd/ccd.h
+# ccd/compiler.h
+# ccd/ccd_export.h
+# ccd/quat.h
+# ccd/vec3.h
 
-export(TARGETS ccd FILE "${CMAKE_BINARY_DIR}/ccd-targets.cmake")
+# )
 
-install(TARGETS ccd
-  EXPORT ccd-targets
-  ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}"
-  INCLUDES DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
-  LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}"
-  PUBLIC_HEADER DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/ccd"
-  RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
-install(EXPORT ccd-targets DESTINATION "${CMAKE_INSTALL_LIBDIR}/ccd")
+INCLUDE_DIRECTORIES (
+	"$"
+)
 
-macro (check_compiler_visibility)
-  include (CheckCXXCompilerFlag)
-  check_cxx_compiler_flag(-fvisibility=hidden COMPILER_SUPPORTS_VISIBILITY)
-endmacro()
+set(SOURCE_FILES
 
-if(UNIX)
-  check_compiler_visibility()
-  if (COMPILER_SUPPORTS_VISIBILITY)
-    set_target_properties(ccd
-         PROPERTIES COMPILE_FLAGS "-fvisibility=hidden")
-  endif()
-endif()
+      ccd.c
+      mpr.c
+      polytope.c
+      support.c
+      vec3.c
 
-if(NOT WIN32 AND BUILD_TESTING AND NOT CCD_HIDE_ALL_SYMBOLS)
-  add_subdirectory(testsuites)
-endif()
+)
+
+# Add the header files to the project
+set(HEADER_FILES
+ccd/ccd.h
+ccd/compiler.h
+ccd/ccd_export.h
+ccd/quat.h
+ccd/vec3.h
+ccd/config.h
+alloc.h
+polytope.h
+simplex.h
+dbg.h
+list.h
+support.h
+)
+#target_include_directories(ccd PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+# target_include_directories(ccd PRIVATE ${YOUR_DIRECTORY})
+
+# Create the shared library (DLL)
+add_library(ccd SHARED ${HEADER_FILES} ${SOURCE_FILES})
+target_include_directories(ccd PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(ccd
+        # List libraries link to the target library
+        android
+        log)
+
+

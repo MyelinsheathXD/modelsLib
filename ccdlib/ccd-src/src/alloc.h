@@ -19,6 +19,7 @@
 #define __CCD_ALLOC_H__
 
 #include <stdlib.h>
+#include <jni.h>
 
 #ifdef __cplusplus
 extern "C" {

@@ -27,6 +27,7 @@
 # include <time.h>
 #endif /* CU_ENABLE_TIMER */
 
+#include <jni.h>
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */

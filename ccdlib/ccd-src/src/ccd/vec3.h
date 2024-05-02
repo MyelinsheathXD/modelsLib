@@ -25,6 +25,7 @@
 #include <ccd/config.h>
 #include <ccd/ccd_export.h>
 
+#include <jni.h>
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */

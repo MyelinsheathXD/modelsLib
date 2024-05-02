@@ -20,6 +20,7 @@
 
 #include <string.h>
 #include <ccd/compiler.h>
+#include <jni.h>
 
 #ifdef __cplusplus
 extern "C" {
