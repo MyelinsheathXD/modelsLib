@@ -109,24 +109,42 @@ target_link_options(
 
 add_library(ccd STATIC IMPORTED )
 set_property(
-    TARGET ccd PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/lib/Release/ccd.lib)
-target_include_directories(ccd INTERFACE   ${PROJECT_SOURCE_DIR}/_deps/ccd-src/src)
-target_include_directories(ccd  INTERFACE   ${PROJECT_SOURCE_DIR}/_deps/ccd-build/src)
+    TARGET ccd PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticCCD/obj/arm64-v8a/libccd.a
+    # TARGET ccd PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticCCD/obj/armeabi-v7a/libccd.a
+    # TARGET ccd PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticCCD/obj/x86/libccd.a
+    # TARGET ccd PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticCCD/obj/x86_64/libccd.a
+    )
+target_include_directories(ccd INTERFACE   D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/ccdlib/ccd-src/src)
+# target_include_directories(ccd  INTERFACE   ${PROJECT_SOURCE_DIR}/_deps/ccd-build/src)
 
 add_library(qhullstatic_r STATIC IMPORTED )
-target_include_directories(qhullstatic_r INTERFACE   ${PROJECT_SOURCE_DIR}/_deps/qhull-src/src/libqhull_r)
+target_include_directories(qhullstatic_r INTERFACE   D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/qhulpackageRef/qhull-src/src/libqhull_r)
 set_property(
-    TARGET qhullstatic_r PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/lib/Release/qhullstatic_r.lib)
+    TARGET qhullstatic_r PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticLibqhulstaticr/obj/arm64-v8a/libqhullstatic_r.a
+    # TARGET qhullstatic_r PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticLibqhulstaticr/obj/armeabi-v7a/libqhullstatic_r.a
+    # TARGET qhullstatic_r PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticLibqhulstaticr/obj/x86/libqhullstatic_r.a
+    # TARGET qhullstatic_r PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticLibqhulstaticr/obj/x86_64/libqhullstatic_r.a
+    )
 
 add_library(lodepng  STATIC IMPORTED )
-target_include_directories(lodepng INTERFACE   ${PROJECT_SOURCE_DIR}/_deps/lodepng-src)
+target_include_directories(lodepng INTERFACE   D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/lodepng-master/lodepng-master)
 set_property(
-    TARGET lodepng PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/lib/Release/lodepng.lib)
+    
+    TARGET lodepng PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/BUildStaticLoadpng/obj/arm64-v8a/liblodepng.a
+    # TARGET lodepng PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/BUildStaticLoadpng/obj/armeabi-v7a/liblodepng.a
+    # TARGET lodepng PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/BUildStaticLoadpng/obj/x86/liblodepng.a
+    # TARGET lodepng PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/BUildStaticLoadpng/obj/x86_64/liblodepng.a
+    )
 
 add_library(tinyxml2  STATIC IMPORTED )
-target_include_directories(tinyxml2  INTERFACE  ${PROJECT_SOURCE_DIR}/_deps/tinyxml2-src)
+target_include_directories(tinyxml2  INTERFACE  D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/tinyx/tinyxml2-src)
 set_property(
-    TARGET tinyxml2 PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/lib/Release/tinyxml2.lib)
+    TARGET tinyxml2 PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticTinyxml2/obj/arm64-v8a/libtinyxml2.a
+    # TARGET tinyxml2 PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticTinyxml2/obj/armeabi-v7a/libtinyxml2.a
+    # TARGET tinyxml2 PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticTinyxml2/obj/x86/libtinyxml2.a
+    # TARGET tinyxml2 PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticTinyxml2/obj/x86_64/libtinyxml2.a
+
+    )
 
 link_directories(${CMAKE_SOURCE_DIR}/mjDll1/lib/Release)
 target_link_libraries(
