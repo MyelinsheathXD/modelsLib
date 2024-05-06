@@ -65,12 +65,12 @@ support.h
 # target_include_directories(ccd PRIVATE ${YOUR_DIRECTORY})
 
 # Create the shared library (DLL)
-add_library(ccd SHARED ${HEADER_FILES} ${SOURCE_FILES})
+add_library(ccd STATIC ${HEADER_FILES} ${SOURCE_FILES})
 target_include_directories(ccd PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
-target_link_libraries(ccd
-        # List libraries link to the target library
-        android
-        log)
+# target_link_libraries(ccd
+#         # List libraries link to the target library
+#         android
+#         log)
 
 
