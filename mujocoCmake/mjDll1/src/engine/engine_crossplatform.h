@@ -40,7 +40,8 @@
   // non-Apple
   #else
     #define mjQUICKSORT(buf, elnum, elsz, func, context) \
-        qsort_r(buf, elnum, elsz, func, context)
+        //qsort_r(buf, elnum, elsz, func, context)
+        qsort_s(buf, elnum, elsz, func, context)
     #define quicksortfunc(name, context, el1, el2) \
         static int name(const void* el1, const void* el2, void* context)
   #endif

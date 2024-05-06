@@ -40,16 +40,16 @@ list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 # include(MujocoDependencies)
 
 set(MUJOCO_HEADERS
-mjDll1/include/mujoco/mjdata.h
-mjDll1/include/mujoco/mjexport.h
-mjDll1/include/mujoco/mjmodel.h
-mjDll1/include/mujoco/mjplugin.h
-mjDll1/include/mujoco/mjrender.h
-mjDll1/include/mujoco/mjtnum.h
-mjDll1/include/mujoco/mjui.h
-mjDll1/include/mujoco/mjvisualize.h
-mjDll1/include/mujoco/mjxmacro.h
-mjDll1/include/mujoco/mujoco.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mjdata.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mjexport.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mjmodel.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mjplugin.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mjrender.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mjtnum.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mjui.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mjvisualize.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mjxmacro.h
+${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include/mujoco/mujoco.h
 )
 
 # Add metadata to mujoco.dll when building on Windows.
@@ -64,27 +64,126 @@ mjDll1/include/mujoco/mujoco.h
 #         ${PROJECT_SOURCE_DIR}mjDll1//include
 #         ${PROJECT_SOURCE_DIR}mjDll1//src
 # )
-add_library(mujoco SHARED ${MUJOCO_RESOURCE_FILES})
+
+# source add
+
+# set(MUJOCO_ENGINE_SRCS
+# ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_array_safety.h
+# ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_callback.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_callback.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_collision_box.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_collision_convex.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_collision_convex.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_collision_driver.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_collision_driver.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_collision_primitive.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_collision_primitive.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_core_constraint.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_core_constraint.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_core_smooth.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_core_smooth.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_crossplatform.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_crossplatform.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_derivative.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_derivative.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_file.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_file.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_forward.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_forward.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_inverse.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_inverse.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_io.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_io.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_macro.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_plugin.cc
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_plugin.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_print.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_print.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_ray.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_ray.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_sensor.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_sensor.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_setconst.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_setconst.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_solver.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_solver.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_support.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_support.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_blas.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_blas.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_errmem.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_errmem.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_misc.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_misc.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_solve.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_solve.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_sparse.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_sparse.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_spatial.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_util_spatial.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_vfs.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_vfs.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_vis_init.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_vis_init.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_vis_interact.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_vis_interact.h
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_vis_visualize.c
+#     ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine/engine_vis_visualize.h
+# )
+
+#end source add
+
+
+
+
+
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11")
+add_library(mujoco SHARED 
+${MUJOCO_RESOURCE_FILES}
+#${MUJOCO_ENGINE_SRCS}
+
+)
 target_include_directories(
   mujoco
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/tinyobjloader-src
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/ccd-build/src
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/ccd-src/src
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/lodepng-sr
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/qhull-src/src/libqhull_r
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/tinyxml2-src
+  # PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/ccd-build/src
+  # PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/ccd-src/src
+  # PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/lodepng-sr
+  # PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/qhull-src/src/libqhull_r
+  # PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/_deps/tinyxml2-src
+  PUBLIC D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/ccdlib/ccd-src/src
+  PUBLIC D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/qhulpackageRef/qhull-src/src/libqhull_r
+  PUBLIC D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/lodepng-master/lodepng-master
+  PUBLIC D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/tinyx/tinyxml2-src
   PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src"
+  PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/cc"
+  PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/engine"
+  PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/render"
+  PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/ui"
+  PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/user"
+  PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/xml"
 )
 
+target_sources(mujoco 
+PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src"
+PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/cc"
+PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/engine"
+PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/render"
+PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/ui"
+PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/user"
+PRIVATE "${PROJECT_SOURCE_DIR}/mjDll1/src/xml"
 
+
+)
 
 #add_subdirectory(mjDll1/plugin/elasticity)
-add_subdirectory(mjDll1/src/engine)
-add_subdirectory(mjDll1/src/user)
-add_subdirectory(mjDll1/src/xml)
-add_subdirectory(mjDll1/src/render)
-add_subdirectory(mjDll1/src/ui)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/engine)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/user)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/xml)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/render)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/ui)
 
 target_compile_definitions(mujoco PRIVATE _GNU_SOURCE CCD_STATIC_DEFINE MUJOCO_DLL_EXPORTS)
 if(MUJOCO_ENABLE_AVX_INTRINSICS)
@@ -108,51 +207,53 @@ target_link_options(
 
 
 add_library(ccd STATIC IMPORTED )
-set_property(
-    TARGET ccd PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticCCD/obj/arm64-v8a/libccd.a
+set_target_properties(
+     ccd PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticCCD/obj/${ANDROID_ABI}/libccd.a
     # TARGET ccd PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticCCD/obj/armeabi-v7a/libccd.a
     # TARGET ccd PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticCCD/obj/x86/libccd.a
     # TARGET ccd PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticCCD/obj/x86_64/libccd.a
     )
-target_include_directories(ccd INTERFACE   D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/ccdlib/ccd-src/src)
+# target_include_directories(ccd INTERFACE   D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/ccdlib/ccd-src/src)
 # target_include_directories(ccd  INTERFACE   ${PROJECT_SOURCE_DIR}/_deps/ccd-build/src)
 
 add_library(qhullstatic_r STATIC IMPORTED )
-target_include_directories(qhullstatic_r INTERFACE   D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/qhulpackageRef/qhull-src/src/libqhull_r)
-set_property(
-    TARGET qhullstatic_r PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticLibqhulstaticr/obj/arm64-v8a/libqhullstatic_r.a
+# target_include_directories(qhullstatic_r INTERFACE   D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/qhulpackageRef/qhull-src/src/libqhull_r)
+set_target_properties(
+     qhullstatic_r PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticLibqhulstaticr/obj/${ANDROID_ABI}/libqhullstatic_r.a
     # TARGET qhullstatic_r PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticLibqhulstaticr/obj/armeabi-v7a/libqhullstatic_r.a
     # TARGET qhullstatic_r PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticLibqhulstaticr/obj/x86/libqhullstatic_r.a
     # TARGET qhullstatic_r PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticLibqhulstaticr/obj/x86_64/libqhullstatic_r.a
     )
 
 add_library(lodepng  STATIC IMPORTED )
-target_include_directories(lodepng INTERFACE   D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/lodepng-master/lodepng-master)
-set_property(
+# target_include_directories(lodepng INTERFACE   D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/lodepng-master/lodepng-master)
+set_target_properties(
     
-    TARGET lodepng PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/BUildStaticLoadpng/obj/arm64-v8a/liblodepng.a
+     lodepng PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/BUildStaticLoadpng/obj/${ANDROID_ABI}/liblodepng.a
     # TARGET lodepng PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/BUildStaticLoadpng/obj/armeabi-v7a/liblodepng.a
     # TARGET lodepng PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/BUildStaticLoadpng/obj/x86/liblodepng.a
     # TARGET lodepng PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/BUildStaticLoadpng/obj/x86_64/liblodepng.a
     )
 
 add_library(tinyxml2  STATIC IMPORTED )
-target_include_directories(tinyxml2  INTERFACE  D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/tinyx/tinyxml2-src)
-set_property(
-    TARGET tinyxml2 PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticTinyxml2/obj/arm64-v8a/libtinyxml2.a
+# target_include_directories(tinyxml2  INTERFACE  D:/engineslist/px/mujoco/24/04/25/mjmod/modelsLib/libBUildSep/tinyx/tinyxml2-src)
+set_target_properties(
+     tinyxml2 PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticTinyxml2/obj/${ANDROID_ABI}/libtinyxml2.a
     # TARGET tinyxml2 PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticTinyxml2/obj/armeabi-v7a/libtinyxml2.a
     # TARGET tinyxml2 PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticTinyxml2/obj/x86/libtinyxml2.a
     # TARGET tinyxml2 PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/libs/buildStaticTinyxml2/obj/x86_64/libtinyxml2.a
 
     )
 
-link_directories(${CMAKE_SOURCE_DIR}/mjDll1/lib/Release)
+# link_directories(${CMAKE_SOURCE_DIR}/mjDll1/lib/Release)
 target_link_libraries(
   mujoco
   PRIVATE ccd
           lodepng
           qhullstatic_r
           tinyxml2
+          android
+          log
 )
 
 set_target_properties(

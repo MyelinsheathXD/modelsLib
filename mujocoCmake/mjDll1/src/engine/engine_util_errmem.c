@@ -111,7 +111,7 @@ void mju_writeLog(const char* type, const char* msg) {
 #elif __STDC_LIB_EXT1__
     localtime_s(&rawtime, &timeinfo);
 #else
-    #error "Thread-safe version of `localtime` is not present in the standard C library"
+    //#error "Thread-safe version of `localtime` is not present in the standard C library"
 #endif
 
     // write to log file

@@ -15,6 +15,10 @@
 #ifndef MUJOCO_MJEXPORT_H_
 #define MUJOCO_MJEXPORT_H_
 
+
+#include <jni.h>
+
+
 #if defined _WIN32 || defined __CYGWIN__
   #define MUJOCO_HELPER_DLL_IMPORT __declspec(dllimport)
   #define MUJOCO_HELPER_DLL_EXPORT __declspec(dllexport)
@@ -36,12 +40,13 @@
   #define MJAPI
   #define MJLOCAL
 #else
-  #ifdef MUJOCO_DLL_EXPORTS
-    #define MJAPI MUJOCO_HELPER_DLL_EXPORT
-  #else
-    #define MJAPI MUJOCO_HELPER_DLL_IMPORT
-  #endif
-  #define MJLOCAL MUJOCO_HELPER_DLL_LOCAL
+  // #ifdef MUJOCO_DLL_EXPORTS
+  //   #define MJAPI MUJOCO_HELPER_DLL_EXPORT
+  // #else
+  //   #define MJAPI MUJOCO_HELPER_DLL_IMPORT
+  // #endif
+  // #define MJLOCAL MUJOCO_HELPER_DLL_LOCAL
+  #define MJAPI
 #endif
 
 #endif  // MUJOCO_MJEXPORT_H_
