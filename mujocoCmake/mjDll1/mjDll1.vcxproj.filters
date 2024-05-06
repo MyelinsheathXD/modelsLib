@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\mujoco\mjdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mujoco\mjexport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mujoco\mjmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mujoco\mjplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mujoco\mjrender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mujoco\mjtnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mujoco\mjui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mujoco\mjvisualize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mujoco\mjxmacro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mujoco\mujoco.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cc\array_safety.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_array_safety.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_callback.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_collision_convex.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_collision_driver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_collision_primitive.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_core_constraint.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_core_smooth.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_crossplatform.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_derivative.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_file.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_forward.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_inverse.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_io.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_macro.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_plugin.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_print.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_ray.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_sensor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_setconst.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_solver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_support.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_util_blas.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_util_errmem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_util_misc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_util_solve.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_util_sparse.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_util_spatial.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_vfs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_vis_init.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_vis_interact.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\engine_vis_visualize.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\glad\glad.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\render_context.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\render_gl2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\render_gl3.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render\render_util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\ui_main.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\user\user_composite.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\user\user_model.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\user\user_objects.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\user\user_util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml_api.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml_base.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml_native_reader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml_native_writer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml_numeric_format.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml_urdf.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml_util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\engine\engine_callback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_collision_box.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_collision_convex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_collision_driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_collision_primitive.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_core_constraint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_core_smooth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_crossplatform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_derivative.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_forward.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_inverse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_plugin.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_print.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_ray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_sensor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_setconst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_solver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_support.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_util_blas.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_util_errmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_util_misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_util_solve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_util_sparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_util_spatial.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_vfs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_vis_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_vis_interact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\engine_vis_visualize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\glad\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\glad\loader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\render_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\render_gl2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\render_gl3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render\render_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\ui_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\user_composite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\user_mesh.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\user_model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\user_objects.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\user_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml_api.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml_base.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml_native_reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml_native_writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml_numeric_format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml_urdf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\render\font\back100.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\back150.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\back200.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\back250.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\back300.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\back50.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\big100.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\big150.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\big200.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\big250.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\big300.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\big50.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\normal100.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\normal150.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\normal200.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\normal250.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\normal300.inc">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\render\font\normal50.inc">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

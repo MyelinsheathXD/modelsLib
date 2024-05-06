@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-subbuild\CMakeFiles\754dbdc27afc927134188ffe663e9e19\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\ccd-subbuild\ccd-populate-prefix\tmp\ccd-populate-mkdirs.cmake">
+      <Filter>Buildsystem Input Files\ccd-populate-prefix\tmp</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{08166CC4-578E-3BF0-BEBE-33FD29800BD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\ccd-populate-prefix\tmp">
+      <UniqueIdentifier>{AB9B3195-E2A8-3157-9490-51A182FBBC73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

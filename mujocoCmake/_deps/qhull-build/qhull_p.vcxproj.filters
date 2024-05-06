@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\stat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\geom2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\poly2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\merge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\libqhull.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\geom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\poly.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\qset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\usermem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\userprintf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\user.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\rboxlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\userprintf_rbox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\libqhull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\geom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\merge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\poly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\qhull_a.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\qset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\stat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\user.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-src\src\libqhull\qhull_p-exports.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B564D462-1166-3AD0-8FD4-10667C39AD8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B61983FB-4966-3295-8693-C88F07289B62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\lodepng-subbuild\CMakeFiles\b0d10a2003de0c660df08e4e8f5111c1\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\lodepng-subbuild\lodepng-populate-prefix\tmp\lodepng-populate-mkdirs.cmake">
+      <Filter>Buildsystem Input Files\lodepng-populate-prefix\tmp</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{82D3B1E6-85E4-360B-A5F4-BC2E6DA2AB0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\lodepng-populate-prefix\tmp">
+      <UniqueIdentifier>{D4F52C1D-A4DC-39D0-B2F3-04EFEBC30B3E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\mujoco\mjdata.h" />
+    <ClInclude Include="include\mujoco\mjexport.h" />
+    <ClInclude Include="include\mujoco\mjmodel.h" />
+    <ClInclude Include="include\mujoco\mjplugin.h" />
+    <ClInclude Include="include\mujoco\mjrender.h" />
+    <ClInclude Include="include\mujoco\mjtnum.h" />
+    <ClInclude Include="include\mujoco\mjui.h" />
+    <ClInclude Include="include\mujoco\mjvisualize.h" />
+    <ClInclude Include="include\mujoco\mjxmacro.h" />
+    <ClInclude Include="include\mujoco\mujoco.h" />
+    <ClInclude Include="src\cc\array_safety.h" />
+    <ClInclude Include="src\engine\engine_array_safety.h" />
+    <ClInclude Include="src\engine\engine_callback.h" />
+    <ClInclude Include="src\engine\engine_collision_convex.h" />
+    <ClInclude Include="src\engine\engine_collision_driver.h" />
+    <ClInclude Include="src\engine\engine_collision_primitive.h" />
+    <ClInclude Include="src\engine\engine_core_constraint.h" />
+    <ClInclude Include="src\engine\engine_core_smooth.h" />
+    <ClInclude Include="src\engine\engine_crossplatform.h" />
+    <ClInclude Include="src\engine\engine_derivative.h" />
+    <ClInclude Include="src\engine\engine_file.h" />
+    <ClInclude Include="src\engine\engine_forward.h" />
+    <ClInclude Include="src\engine\engine_inverse.h" />
+    <ClInclude Include="src\engine\engine_io.h" />
+    <ClInclude Include="src\engine\engine_macro.h" />
+    <ClInclude Include="src\engine\engine_plugin.h" />
+    <ClInclude Include="src\engine\engine_print.h" />
+    <ClInclude Include="src\engine\engine_ray.h" />
+    <ClInclude Include="src\engine\engine_sensor.h" />
+    <ClInclude Include="src\engine\engine_setconst.h" />
+    <ClInclude Include="src\engine\engine_solver.h" />
+    <ClInclude Include="src\engine\engine_support.h" />
+    <ClInclude Include="src\engine\engine_util_blas.h" />
+    <ClInclude Include="src\engine\engine_util_errmem.h" />
+    <ClInclude Include="src\engine\engine_util_misc.h" />
+    <ClInclude Include="src\engine\engine_util_solve.h" />
+    <ClInclude Include="src\engine\engine_util_sparse.h" />
+    <ClInclude Include="src\engine\engine_util_spatial.h" />
+    <ClInclude Include="src\engine\engine_vfs.h" />
+    <ClInclude Include="src\engine\engine_vis_init.h" />
+    <ClInclude Include="src\engine\engine_vis_interact.h" />
+    <ClInclude Include="src\engine\engine_vis_visualize.h" />
+    <ClInclude Include="src\render\glad\glad.h" />
+    <ClInclude Include="src\render\render_context.h" />
+    <ClInclude Include="src\render\render_gl2.h" />
+    <ClInclude Include="src\render\render_gl3.h" />
+    <ClInclude Include="src\render\render_util.h" />
+    <ClInclude Include="src\ui\ui_main.h" />
+    <ClInclude Include="src\user\user_composite.h" />
+    <ClInclude Include="src\user\user_model.h" />
+    <ClInclude Include="src\user\user_objects.h" />
+    <ClInclude Include="src\user\user_util.h" />
+    <ClInclude Include="src\xml\xml.h" />
+    <ClInclude Include="src\xml\xml_api.h" />
+    <ClInclude Include="src\xml\xml_base.h" />
+    <ClInclude Include="src\xml\xml_native_reader.h" />
+    <ClInclude Include="src\xml\xml_native_writer.h" />
+    <ClInclude Include="src\xml\xml_numeric_format.h" />
+    <ClInclude Include="src\xml\xml_urdf.h" />
+    <ClInclude Include="src\xml\xml_util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\engine\engine_callback.c" />
+    <ClCompile Include="src\engine\engine_collision_box.c" />
+    <ClCompile Include="src\engine\engine_collision_convex.c" />
+    <ClCompile Include="src\engine\engine_collision_driver.c" />
+    <ClCompile Include="src\engine\engine_collision_primitive.c" />
+    <ClCompile Include="src\engine\engine_core_constraint.c" />
+    <ClCompile Include="src\engine\engine_core_smooth.c" />
+    <ClCompile Include="src\engine\engine_crossplatform.c" />
+    <ClCompile Include="src\engine\engine_derivative.c" />
+    <ClCompile Include="src\engine\engine_file.c" />
+    <ClCompile Include="src\engine\engine_forward.c" />
+    <ClCompile Include="src\engine\engine_inverse.c" />
+    <ClCompile Include="src\engine\engine_io.c" />
+    <ClCompile Include="src\engine\engine_plugin.cc" />
+    <ClCompile Include="src\engine\engine_print.c" />
+    <ClCompile Include="src\engine\engine_ray.c" />
+    <ClCompile Include="src\engine\engine_sensor.c" />
+    <ClCompile Include="src\engine\engine_setconst.c" />
+    <ClCompile Include="src\engine\engine_solver.c" />
+    <ClCompile Include="src\engine\engine_support.c" />
+    <ClCompile Include="src\engine\engine_util_blas.c" />
+    <ClCompile Include="src\engine\engine_util_errmem.c" />
+    <ClCompile Include="src\engine\engine_util_misc.c" />
+    <ClCompile Include="src\engine\engine_util_solve.c" />
+    <ClCompile Include="src\engine\engine_util_sparse.c" />
+    <ClCompile Include="src\engine\engine_util_spatial.c" />
+    <ClCompile Include="src\engine\engine_vfs.c" />
+    <ClCompile Include="src\engine\engine_vis_init.c" />
+    <ClCompile Include="src\engine\engine_vis_interact.c" />
+    <ClCompile Include="src\engine\engine_vis_visualize.c" />
+    <ClCompile Include="src\render\glad\glad.c" />
+    <ClCompile Include="src\render\glad\loader.cc" />
+    <ClCompile Include="src\render\render_context.c" />
+    <ClCompile Include="src\render\render_gl2.c" />
+    <ClCompile Include="src\render\render_gl3.c" />
+    <ClCompile Include="src\render\render_util.c" />
+    <ClCompile Include="src\ui\ui_main.c" />
+    <ClCompile Include="src\user\user_composite.cc" />
+    <ClCompile Include="src\user\user_mesh.cc" />
+    <ClCompile Include="src\user\user_model.cc" />
+    <ClCompile Include="src\user\user_objects.cc" />
+    <ClCompile Include="src\user\user_util.cc" />
+    <ClCompile Include="src\xml\xml.cc" />
+    <ClCompile Include="src\xml\xml_api.cc" />
+    <ClCompile Include="src\xml\xml_base.cc" />
+    <ClCompile Include="src\xml\xml_native_reader.cc" />
+    <ClCompile Include="src\xml\xml_native_writer.cc" />
+    <ClCompile Include="src\xml\xml_numeric_format.cc" />
+    <ClCompile Include="src\xml\xml_urdf.cc" />
+    <ClCompile Include="src\xml\xml_util.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\render\font\back100.inc" />
+    <None Include="src\render\font\back150.inc" />
+    <None Include="src\render\font\back200.inc" />
+    <None Include="src\render\font\back250.inc" />
+    <None Include="src\render\font\back300.inc" />
+    <None Include="src\render\font\back50.inc" />
+    <None Include="src\render\font\big100.inc" />
+    <None Include="src\render\font\big150.inc" />
+    <None Include="src\render\font\big200.inc" />
+    <None Include="src\render\font\big250.inc" />
+    <None Include="src\render\font\big300.inc" />
+    <None Include="src\render\font\big50.inc" />
+    <None Include="src\render\font\normal100.inc" />
+    <None Include="src\render\font\normal150.inc" />
+    <None Include="src\render\font\normal200.inc" />
+    <None Include="src\render\font\normal250.inc" />
+    <None Include="src\render\font\normal300.inc" />
+    <None Include="src\render\font\normal50.inc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d425d9d4-ce41-4952-bac5-2739dd7d528b}</ProjectGuid>
+    <RootNamespace>mjDll1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;MJDLL1_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;MJDLL1_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;MJDLL1_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GNU_SOURCE;CCD_STATIC_DEFINE;MUJOCO_DLL_EXPORTS;mjUSEPLATFORMSIMD;_CRT_SECURE_NO_WARNINGS;EIGEN_MPL2_ONLY;CMAKE_INTDIR="Release";mujoco_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>D:\engineslist\px\mujoco\24\04\25\mjmod\libDyMj\mjDll1\_deps\tinyobjloader-src;D:\engineslist\px\mujoco\24\04\25\mjmod\libDyMj\mjDll1\_deps\ccd-build\src;D:\engineslist\px\mujoco\24\04\25\mjmod\libDyMj\mjDll1\_deps\ccd-src\src;D:\engineslist\px\mujoco\24\04\25\mjmod\libDyMj\mjDll1\mjDll1\src;D:\engineslist\px\mujoco\24\04\25\mjmod\libDyMj\mjDll1\mjDll1\include;D:\engineslist\px\mujoco\24\04\25\mjmod\libDyMj\mjDll1\_deps\lodepng-src;D:\engineslist\px\mujoco\24\04\25\mjmod\libDyMj\mjDll1\_deps\qhull-src\src\libqhull_r;D:\engineslist\px\mujoco\24\04\25\mjmod\libDyMj\mjDll1\_deps\tinyxml2-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <UseFullPaths>false</UseFullPaths>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>true</EnableUAC>
+      <AdditionalDependencies>lib\Release\tinyxml2.lib;lib\Release\ccd.lib;lib\Release\qhullstatic_r.lib;lib\Release\lodepng.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

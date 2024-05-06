@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\CMakeFiles\19a7c216b20eb212a6d92869cdba501b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\engineslist\px\mujoco\24\04\25\mjmod\Bvs\_deps\qhull-subbuild\qhull-populate-prefix\tmp\qhull-populate-mkdirs.cmake">
+      <Filter>Buildsystem Input Files\qhull-populate-prefix\tmp</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A9E24D32-9D44-3142-8C1E-0CEB7F49F36C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\qhull-populate-prefix\tmp">
+      <UniqueIdentifier>{F018B12C-2C85-3B0C-86D3-5D30B5761DA5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
