@@ -23,7 +23,7 @@ project(
 enable_language(C)
 enable_language(CXX)
 
-list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
+#list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
 # option(MUJOCO_BUILD_EXAMPLES "Build samples for MuJoCo" ON)
 # option(MUJOCO_BUILD_SIMULATE "Build simulate library for MuJoCo" ON)
@@ -185,7 +185,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/xml)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/render)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/mjDll1/src/ui)
 
-target_compile_definitions(mujoco PRIVATE _GNU_SOURCE CCD_STATIC_DEFINE MUJOCO_DLL_EXPORTS)
+# target_compile_definitions(mujoco PRIVATE _GNU_SOURCE CCD_STATIC_DEFINE MUJOCO_DLL_EXPORTS)
 if(MUJOCO_ENABLE_AVX_INTRINSICS)
   target_compile_definitions(mujoco PUBLIC mjUSEPLATFORMSIMD)
 endif()
