@@ -27,7 +27,7 @@ tinyxml2.h
 # target_include_directories(ccd PRIVATE ${YOUR_DIRECTORY})
 
 # Create the shared library (DLL)
-add_library(tinyxml2 SHARED ${HEADER_FILES} ${SOURCE_FILES})
+add_library(tinyxml2 STATIC ${HEADER_FILES} ${SOURCE_FILES})
 target_include_directories(tinyxml2 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(tinyxml2
